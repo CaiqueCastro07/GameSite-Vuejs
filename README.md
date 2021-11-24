@@ -1,2 +1,24 @@
-# GameSite-Vuejs
-Site with two games avalaible and live ranked score with API, made with VueJS
+# gamesite
+
+## Project setup
+```
+npm install // use node 13.12
+```
+
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
+
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Lints and fixes files
+```
+npm run lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).

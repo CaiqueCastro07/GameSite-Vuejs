@@ -1,0 +1,106 @@
+.backMemory {
+  display: flex;
+  background-color: rgb(255, 200, 200);
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.cardsArea {
+  display: flex;
+  height: 90%;
+  width: 85%;
+  position: absolute;
+  padding-top: 5%;
+}
+:root {
+  --cardWidth: 10vw;
+  --cardHeight: calc(var(--cardWidth) * 1.5);
+}
+
+.card {
+  display: inline-block;
+  position: relative;
+  align-content: center;
+  perspective: 600;
+  justify-content: center;
+  width: var(--cardWidth);
+  height: var(--cardHeight);
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease-in-out;
+  backface-visibility: visible;
+}
+
+.costas {
+  width: var(--cardWidth);
+  height: var(--cardHeight);
+  cursor: pointer;
+  margin: 20px;
+  transition: all 0.5s linear;
+  transform-style: preserve-3d;
+  background-image: url("https://i.imgur.com/pzfTKtf.png");
+  background-size: contain;
+  backface-visibility: hidden;
+  overflow: hidden;
+}
+
+.frente {
+  position: absolute;
+  inset: 0;
+  width: var(--cardWidth);
+  height: var(--cardHeight);
+  margin: 20px;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease-in-out;
+  background-size: contain;
+  backface-visibility: hidden;
+  transform: rotateY(-180deg);
+  background-color: white;
+  border-radius: 7px;
+}
+.virado {
+  transform-style: preserve-3d;
+  transition: all 0.5s ease-in-out;
+  transform: rotateY(180deg);
+}
+
+.allButtons {
+  position: absolute;
+  display: flex;
+  top: 10%;
+  z-index: 8;
+}
+
+.play {
+  display: grid;
+  place-items: center;
+  background-color: blue;
+  height: 3.5vw;
+  width: 6vw;
+  border-radius: 10px;
+  margin: 1px;
+}
+.tempo {
+  display: grid;
+  height: 3.5vw;
+  width: 6vw;
+  border-radius: 10px;
+  background-color: red;
+  margin: 1px;
+  place-items: center;
+
+}
+.vezes {
+  display: grid;
+  height: 3.5vw;
+  width: 6vw;
+  border-radius: 10px;
+  background-color: green;
+  margin: 1px;
+  place-items: center;
+
+}
